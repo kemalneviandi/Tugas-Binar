@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.item1 { grid-area: title; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: isi; }
+.item4 { grid-area: isi2; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'title title title title title title'
+        'menu isi isi isi isi2 isi2'
+        'menu footer footer footer footer footer';
+    gap: 30px;
+    background-color: orange;
+    padding: 35px;
+    }
+
+    .grid-container > div {
+    background-color: maroon;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 30px;
+    }
+    </style> 
+    </head>
+    <body>
+
+    <h1>layout grid</h1>
+
+    <div class="grid-container">
+        <div class="item1">title</div>
+        <div class="item2">menu</div>
+        <div class="item3">isi</div>
+        <div class="item4">isi2</div>
+        <div class="item5">footer</div>
+    </div>
+    
+</body>
+</html>
